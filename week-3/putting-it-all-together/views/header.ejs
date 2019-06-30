@@ -1,0 +1,52 @@
+<!--
+;============================================
+; Title:  Assignment 3.4 | header.ejs
+; Author: Richard Krasso
+; Date:   March 29 2019
+; Modified By: Aaron Wilson
+; Description: PIAT | Header, EJS View.
+;=============================================
+-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Putting It All Together</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav">
+
+          <li class="nav-item <%= pageId === 'home' ? 'active' : '' %>"><!-- Ternary operators for adding the active class to the selected nav link.-->
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item <%= pageId === 'about' ? 'active' : '' %>"><!-- Ternary operators for adding the active class to the selected nav link.-->
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item <%= pageId === 'products' ? 'active' : '' %>"><!-- Ternary operators for adding the active class to the selected nav link.-->
+              <a class="nav-link" href="/products">Products</a>
+          </li>
+          <li class="nav-item <%= pageId === 'contact' ? 'active' : '' %>"><!-- Ternary operators for adding the active class to the selected nav link.-->
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>

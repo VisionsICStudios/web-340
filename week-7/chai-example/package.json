@@ -1,0 +1,14 @@
+{
+  "name": "chai-example",
+  "author": "Professor Krasso",
+  "Modified-By": "Aaron Wilson",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}

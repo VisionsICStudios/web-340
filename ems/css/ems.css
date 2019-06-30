@@ -1,0 +1,71 @@
+/*
+;=============================================
+; Title:  Assignment 6.4 | (Milestone 2)
+; Author: Richard Krasso
+; Date:   March 29 2019
+; Modified By: Aaron Wilson
+; Description: EMS | ems.css, EJS.
+;=============================================
+*/
+
+html {
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+body{
+    background-color: white;
+}
+
+h1{
+    color: cadetblue;
+}
+
+.buttons {
+    overflow:hidden;
+    border:1px solid hsla(0,0%,0%,1.00);
+    background-color:hsla(0,0%,97%,1.00);
+}
+
+.buttons button {
+    background-color:inherit;
+    float:left;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    padding:14px 16px;
+    transition:0.3s;
+    font-size:17px;
+}
+
+
+.buttons button:hover {
+    background-color:hsla(223,78%,77%,1.00);
+}
+
+.buttons button.active {
+    background-color:hsla(238,91%,48%,1.00);
+}
+
+
+.tabPanel {
+    display:none;
+    padding:16px 12px;
+    border:1px solid hsla(0,0%,2%,1.00);
+    border-top:none;
+}
+
+.right {
+    float:right;
+    cursor:pointer;
+    font-size:28px;
+}
+
+.panelImg {
+    display:block;
+    height:75px;
+    width:200px;
+}
+
+footer{
+    background-color:hsla(0,0%,0%,1.00);
+}

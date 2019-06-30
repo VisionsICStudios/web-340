@@ -1,0 +1,89 @@
+<!--
+;============================================
+; Title:  Assignment 9.3 | (Final Milestone)
+; Author: Richard Krasso
+; Date:   April 21 2019
+; Modified By: Aaron Wilson
+; Description: EMS | Index, EJS View.
+;=============================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <% include header %>
+
+    <body>
+
+        <% include navbar %>
+
+        <div role="main" class="container" style="width: 30%;">
+
+            <br /><br />
+
+            <% if (employees.length) { %>
+
+                <h2> Employee Directory </h2>
+
+                <br />
+
+                    <a class="" href="/new"> Add New Employee </a>
+
+                <br />
+
+                <table class="table table-hover">
+
+                    <thead class="bg-secondary">
+
+                        <tr>
+
+                            <th class="text-white"> Name </th>
+
+                            <th class="text-white"> Task </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <% employees.forEach(function (emp) { %>
+
+                        <tr>
+
+                            <td><%= emp.name %></td>
+
+                            <td style="width: 10%; text-align: center;">
+
+                                <a style="color: #555" href="/view/<%= emp.name %>">
+
+                                    <i class="fa fa-pencil fa-fw" aria-hidden="true"></i>
+
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                    <% }) %>
+
+                </table>
+
+            <% } else { %>
+
+                No employee information available. <a href="/new"> Add New Employee </a>
+
+            <% } %>
+
+            <br />
+
+        </div>
+
+        <% include scripts %>
+
+    </body>
+
+</html>

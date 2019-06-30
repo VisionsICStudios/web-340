@@ -1,0 +1,9 @@
+{
+  "name": "json-api",
+  "author": "Professor Krasso",
+  "modified-by": "Aaron Wilson",
+  "private": true,
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

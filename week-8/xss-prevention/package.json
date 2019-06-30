@@ -1,0 +1,13 @@
+{
+  "name": "xss-cross-site-scripting",
+  "author": "Professor Krasso",
+  "modified-by": "Aaron Wilson",
+  "private": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "morgan": "^1.9.1"
+  }
+}

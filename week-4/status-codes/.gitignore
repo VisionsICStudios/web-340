@@ -1,0 +1,18 @@
+# IDE extensions
+.vscode
+.idea
+.iml
+.editorconfig
+.eslintrc
+# node
+node_modules
+typings
+.node_repl_history
+package-lock.json
+# system folders
+StandBy
+.zip
+# osx system files
+.DS_Store
+.txt
+

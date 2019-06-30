@@ -1,0 +1,51 @@
+<!--
+;============================================
+; Title:  Assignment 5.2 | index.ejs
+; Author: Richard Krasso
+; Date:   March 29 2019
+; Modified By: Aaron Wilson
+; Description: IF/ ELSE | Index, EJS View
+;=============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EJS IF/ELSE Render</title>
+
+    <!-- Stylesheet - Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-danger">
+      <h2>WilsonA Exercise 5.2</h2>
+    </nav>
+
+    <div role="main" class="container">
+      <br /><br />
+
+      <h2>Aaron's Names List</h2>
+
+      <!-- EJS IF statement -->
+      <% if (names.length > 0) { %>
+
+      <!-- EJS For Loop -->
+      <% for (let i = 0; i < names.length; i++) { %>
+
+      <!-- Pass the iterations of each name in the names array, -->
+      <div class="alert alert-primary" role="alert">
+        <strong><%= names[i] %></strong>
+      </div>
+
+      <% } %>
+      <!-- End of IF statement -->
+      <% } %>
+      <!-- End of FOR loop -->
+
+    </div>
+  </body>
+</html>
